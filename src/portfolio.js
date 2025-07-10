@@ -163,7 +163,7 @@ const workExperiences = {
       role: "Computer Support",
       company: "Graphic Packaging International",
       companylogo: require("./assets/images/gpiLogo.jpeg"),
-      date: "April 2022– Dec 2022",
+      date: "April 2022 – Dec 2022",
       desc: "As a Computer Support intern at Graphic Packaging International, I assisted in troubleshooting hardware and software issues, ensuring smooth operation of IT systems. I collaborated with the IT team to provide technical support to employees and contributed to system maintenance and upgrades."
     }
   ]
@@ -180,23 +180,59 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "STUFF THAT I HAVE BUILT SO FAR",
   projects: [
-    // {
-    //   image: require("./assets/images/saayaHealthLogo.webp"),
-    //   projectName: "Saayahealth",
-    //   projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "http://saayahealth.com/"
-    //     }
-    //     //  you can add extra buttons here.
-    //   ]
-    // }
+    {
+      image: require("./assets/images/evently.png"),
+      projectName: "HostFlow – Event Management Dashboard",
+      projectDesc:
+        "HostFlow is a modern dashboard built with Next.js , designed for event managers to track guests, schedules, and logistics. It uses dummy data to showcase features like summaries, charts, and quick actions in an intuitive layout",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://host-flow.vercel.app/"
+        },
+        {
+          name: "Source Code",
+          url: "https://github.com/a-deola/host-flow"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/cardly.png"),
+      projectName: "Cardly – Digital Business Card",
+      projectDesc:
+        "Cardly is a clean and minimal React app that displays my social links in one place. It’s designed for quick access and easy sharing, like a digital business card.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://cardlybyade.netlify.app/"
+        },
+        {
+          name: "Source Code",
+          url: "https://github.com/a-deola/cardly"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/lotto.png"),
+      projectName: "LottoFi – Web3 Lottery App",
+      projectDesc:
+        "Built with Next.js and powered by smart contracts on Base, LottoFi offers a fully decentralized lottery experience. Users can enter draws, and interact directly with the blockchain from a sleek, user-friendly interface.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://lottofi-ui.vercel.app/"
+        },
+        {
+          name: "Source Code",
+          url: "https://github.com/a-deola/cardly"
+        }
+      ]
+    }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
