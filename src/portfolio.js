@@ -1,7 +1,27 @@
-/* Change this file to get your personal Portfolio */
+import {
+  FaSass,
+  FaJsSquare,
+  FaReact,
+  FaNode,
+  FaNpm,
+  FaDatabase,
+  FaPython,
+  FaDocker
+} from "react-icons/fa";
+import {
+  SiRust,
+  SiTypescript,
+  SiSolidity,
+  SiGo,
+  SiGit,
+  SiNestjs,
+  SiNextdotjs,
+  SiReact,
+  SiSolana,
+  SiEthereum
+} from "react-icons/si";
 
 // To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
@@ -23,7 +43,7 @@ const greeting = {
   username: "Adeola Samuel",
   title: "Hi, I'm Adeola",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 who has an experience of building Web applications with JavaScript / Reactjs / Nodejs  and some other cool libraries and frameworks."
+    "A software developer who enjoys turning ideas into intuitive, functional products. When I’m not coding, I’m writing about what I learn and exploring new ways to build and create.."
   ),
   resumeLink:
     "https://docs.google.com/document/d/19JCZlUEbgquRYjPdQciJPVHUgB-yMDHLmpjWmuEY404/edit?usp=sharing", // Set to empty to hide the button
@@ -47,12 +67,12 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "VERSATILE FULL STACK DEVELOPER WITH A STRONG DRIVE TO LEARN AND WORK ACROSS THE TECH STACK",
+    "Full-Stack & Blockchain Developer focused on building fast, intuitive, and scalable products.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks")
+    emoji("⚡ Integrate Web3 features and on-chain logic")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -60,45 +80,47 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Sass",
+      icon: FaSass
     },
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      icon: FaJsSquare
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "React.js",
+      icon: FaReact
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Node.js",
+      icon: FaNode
     },
     {
       skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      icon: FaNpm
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "Databases",
+      icon: FaDatabase
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Python",
+      icon: FaPython
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "Docker",
+      icon: FaDocker
+    },
+    {skillName: "Rust", icon: SiRust},
+    {skillName: "TypeScript", icon: SiTypescript},
+    {skillName: "Solidity", icon: SiSolidity},
+    {skillName: "Golang", icon: SiGo},
+    {skillName: "Git", icon: SiGit},
+    {skillName: "NestJS", icon: SiNestjs},
+    {skillName: "Next.js", icon: SiNextdotjs},
+    {skillName: "React", icon: SiReact},
+    {skillName: "Solana", icon: SiSolana},
+    {skillName: "Ethereum", icon: SiEthereum}
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -109,14 +131,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      schoolName: "Encode Club",
+      logo: require("./assets/images/encode.jpeg"),
+      subHeader: "Encode x Solana Rust Bootcamp Q2 2025",
+      duration: "Jun 2025 - Jul 2025"
+    },
+    {
       schoolName: "University of Port Harcourt",
       logo: require("./assets/images/uniportLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "2019 - 2023"
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      subHeader: "B.Sc. in Computer Science",
+      duration: "Feb 2019 - Dec 2023"
     }
   ]
 };
@@ -151,20 +175,13 @@ const workExperiences = {
       role: "Software Developer",
       company: "The QA School",
       companylogo: require("./assets/images/qaLogo.jpeg"),
-      date: "Nov 2024 – Present",
-      desc: "As a Software Developer at The QA School, I work on building and maintaining web applications, focusing on enhancing user experience and system performance. I collaborate with cross-functional teams to ensure smooth deployment and integration of features.",
-      descBullets: [
-        "Develop and maintain web applications using modern technologies.",
-        "Collaborate with QA and design teams to ensure seamless functionality and UI/UX.",
-        "Contribute to code reviews and ensure adherence to best development practices."
-      ]
+      date: "Nov 2024 – March 2025"
     },
     {
-      role: "Computer Support",
+      role: "IT Support Intern",
       company: "Graphic Packaging International",
       companylogo: require("./assets/images/gpiLogo.jpeg"),
-      date: "April 2022 – Dec 2022",
-      desc: "As a Computer Support intern at Graphic Packaging International, I assisted in troubleshooting hardware and software issues, ensuring smooth operation of IT systems. I collaborated with the IT team to provide technical support to employees and contributed to system maintenance and upgrades."
+      date: "April 2022 – Dec 2022"
     }
   ]
 };
@@ -184,6 +201,22 @@ const bigProjects = {
   subtitle: "STUFF THAT I HAVE BUILT SO FAR",
   projects: [
     {
+      image: require("./assets/images/skycast.png"),
+      projectName: "SkyCast – Weather Forecast App",
+      projectDesc:
+        "SkyCast is a fast and lightweight weather app built with Vite and Fiber. It fetches real-time weather data using the OpenWeather API, showing current conditions with a responsive UI and live updates based on user location.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://a-deola.github.io/SkyCast/"
+        },
+        {
+          name: "Source Code",
+          url: "https://github.com/a-deola/SkyCast"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/evently.png"),
       projectName: "HostFlow – Event Management Dashboard",
       projectDesc:
@@ -200,22 +233,6 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/cardly.png"),
-      projectName: "Cardly – Digital Business Card",
-      projectDesc:
-        "Cardly is a clean and minimal React app that displays my social links in one place. It’s designed for quick access and easy sharing, like a digital business card.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://cardlybyade.netlify.app/"
-        },
-        {
-          name: "Source Code",
-          url: "https://github.com/a-deola/cardly"
-        }
-      ]
-    },
-    {
       image: require("./assets/images/lotto.png"),
       projectName: "LottoFi – Web3 Lottery App",
       projectDesc:
@@ -224,6 +241,22 @@ const bigProjects = {
         {
           name: "Visit Website",
           url: "https://lottofi-ui.vercel.app/"
+        },
+        {
+          name: "Source Code",
+          url: "https://github.com/a-deola/cardly"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/cardly.png"),
+      projectName: "Cardly – Digital Business Card",
+      projectDesc:
+        "Cardly is a clean and minimal React app that displays my social links in one place. It’s designed for quick access and easy sharing, like a digital business card.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://cardlybyade.netlify.app/"
         },
         {
           name: "Source Code",
@@ -335,10 +368,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me 🗨️ "),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+234 9025184633",
   email_address: "prechie.samuel@gmail.com"
 };
 
